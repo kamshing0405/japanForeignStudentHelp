@@ -43,9 +43,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: pnpm install ci # 或 pnpm install / yarn install / bun install
+        run: pnpm install --frozen-loc # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: pnpm docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Check output directory
+        run: ls -R  # 這會在日誌中列出所有檔案，幫助你確認 dist 的正確位置
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
