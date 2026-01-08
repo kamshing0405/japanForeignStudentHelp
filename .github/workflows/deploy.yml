@@ -47,8 +47,6 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: pnpm install 
-        env:
-          CI: true
       - name: Build with VitePress
         run: pnpm docs build docs
       - name: Upload artifact
