@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@import "vitepress/dist/client/theme-default/styles/vars.css";
+@import "vitepress/dist/client/theme-default/styles/components.css";
+@import "vitepress/dist/client/theme-default/styles/default-theme.css";
+
 /* Self CSS */
 
 .custom-title {
