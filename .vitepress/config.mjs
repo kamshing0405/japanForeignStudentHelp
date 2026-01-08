@@ -3,7 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  outDir: "dist",
   base: "/japanForeignStudentHelp/",
   title: "日本留学ガイド",
   vite: {
