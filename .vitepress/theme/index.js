@@ -2,6 +2,7 @@
 import { h } from "vue";
 import DefaultTheme from "vitepress/theme";
 import "./tailwind.css";
+import "./style.css";
 import PageTitle from "./components/PageTitle.vue";
 import InfoCard from "./components/InfoCard.vue";
 
