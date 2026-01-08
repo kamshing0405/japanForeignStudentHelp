@@ -48,11 +48,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install 
       - name: Build with VitePress
-        run: pnpm docs build docs
+        run: pnpm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist
+          path: .vitepress/dist
 
   # 部署工作
   deploy:
