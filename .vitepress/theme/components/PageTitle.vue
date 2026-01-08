@@ -12,6 +12,7 @@
 
 <script setup>
 import { computed } from "vue";
+import { withBase } from "vitepress"; // 引入工具
 
 const props = defineProps({
   title: {
@@ -38,8 +39,13 @@ const props = defineProps({
 
 const heroStyle = computed(() => {
   const overlay = `rgba(0, 0, 0, ${props.overlayOpacity})`;
+
+  const processedBg = props.bgImage.startsWith("/")
+    ? withBase(props.bgImage)
+    : props.bgImage;
+
   return {
-    backgroundImage: `linear-gradient(${overlay}, ${overlay}), url(${props.bgImage})`,
+    backgroundImage: `linear-gradient(${overlay}, ${overlay}), url(${processedBg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
