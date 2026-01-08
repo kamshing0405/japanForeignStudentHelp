@@ -3,6 +3,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  outDir: "dist",
+  base: "/japanForeignStudentHelp/",
   title: "日本留学ガイド",
   vite: {
     plugins: [tailwindcss()],
@@ -11,10 +13,9 @@ export default defineConfig({
   themeConfig: {
     outline: {
       label: "目次",
-      level: [2, 3], // 顯示標題層級
+      level: [2, 3],
     },
 
-    // 2. 修改行動版菜單按鈕 (Menu)
     sidebarMenuLabel: "メニュー",
 
     returnToTopLabel: "トップに戻る",
@@ -48,13 +49,13 @@ export default defineConfig({
 
     footer: {
       message: "",
-      copyright: "copyright © 2025 foreign study in Japan",
+      copyright: "copyright © 2026 KCGI group 35 All rights reserved.",
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "日本の魅力", link: "/docs/なぜ日本？/なぜ日本？" },
       {
-        text: "日本への留学計画",
+        text: "留学計画",
         items: [
           {
             text: "日本の教育制度",
@@ -105,7 +106,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "卒業後進路",
+        text: "進路",
         items: [
           { text: "日本での就職", link: "/docs/卒業後の進路/01.就職活動" },
           {
