@@ -2,9 +2,6 @@
 #
 name: Deploy VitePress site to Pages
 
-run: |
-    pnpm docs:build
-    ls -l docs/.vitepress
     
 on:
   # 在针对 `main` 分支的推送上运行。如果你
@@ -51,7 +48,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
-        run: pnpm docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+        run: |
+            pnpm docs:build
+            ls -l docs/.vitepress
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
