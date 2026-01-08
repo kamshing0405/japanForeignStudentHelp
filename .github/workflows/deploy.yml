@@ -2,6 +2,10 @@
 #
 name: Deploy VitePress site to Pages
 
+run: |
+    pnpm docs:build
+    ls -l docs/.vitepress
+    
 on:
   # 在针对 `main` 分支的推送上运行。如果你
   # 使用 `master` 分支作为默认分支，请将其更改为 `master`
