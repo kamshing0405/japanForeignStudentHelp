@@ -137,3 +137,17 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+.VPFeature {
+  transition: all 0.3s ease-in-out !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.VPFeature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.VPHero .image {
+  height: 300px;
+  width: 500px;
+}
