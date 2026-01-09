@@ -12,9 +12,18 @@ importers:
         specifier: ^0.562.0
         version: 0.562.0(vue@3.5.26)
     devDependencies:
+      '@tailwindcss/postcss':
+        specifier: ^4.1.18
+        version: 4.1.18
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.1.18(vite@5.4.21(lightningcss@1.30.2))
+      autoprefixer:
+        specifier: ^10.4.23
+        version: 10.4.23(postcss@8.5.6)
+      postcss:
+        specifier: ^8.5.6
+        version: 8.5.6
       tailwindcss:
         specifier: ^4.1.18
         version: 4.1.18
@@ -102,6 +111,10 @@ packages:
   '@algolia/requester-node-http@5.46.1':
     resolution: {integrity: sha512-VwbhV1xvTGiek3d2pOS6vNBC4dtbNadyRT+i1niZpGhOJWz1XnfhxNboVbXPGAyMJYz7kDrolbDvEzIDT93uUA==}
     engines: {node: '>= 14.0.0'}
+
+  '@alloc/quick-lru@5.2.0':
+    resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
+    engines: {node: '>=10'}
 
   '@babel/helper-string-parser@7.27.1':
     resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
@@ -522,6 +535,9 @@ packages:
     resolution: {integrity: sha512-EgCR5tTS5bUSKQgzeMClT6iCY3ToqE1y+ZB0AKldj809QXk1Y+3jB0upOYZrn9aGIzPtUsP7sX4QQ4XtjBB95A==}
     engines: {node: '>= 10'}
 
+  '@tailwindcss/postcss@4.1.18':
+    resolution: {integrity: sha512-Ce0GFnzAOuPyfV5SxjXGn0CubwGcuDB0zcdaPuCSzAa/2vII24JTkH+I6jcbXLb1ctjZMZZI6OjDaLPJQL1S0g==}
+
   '@tailwindcss/vite@4.1.18':
     resolution: {integrity: sha512-jVA+/UpKL1vRLg6Hkao5jldawNmRo7mQYrZtNHMIVpLfLhDml5nMRUo/8MwoX2vNXvnaXNNMedrMfMugAVX1nA==}
     peerDependencies:
@@ -653,8 +669,27 @@ packages:
     resolution: {integrity: sha512-39ol8Ulqb3MntofkXHlrcXKyU8BU0PXvQrXPBIX6eXj/EO4VT7651mhGVORI2oF8ydya9nFzT3fYDoqme/KL6w==}
     engines: {node: '>= 14.0.0'}
 
+  autoprefixer@10.4.23:
+    resolution: {integrity: sha512-YYTXSFulfwytnjAPlw8QHncHJmlvFKtczb8InXaAx9Q0LbfDnfEYDE55omerIJKihhmU61Ft+cAOSzQVaBUmeA==}
+    engines: {node: ^10 || ^12 || >=14}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.1.0
+
+  baseline-browser-mapping@2.9.13:
+    resolution: {integrity: sha512-WhtvB2NG2wjr04+h77sg3klAIwrgOqnjS49GGudnUPGFFgg7G17y7Qecqp+2Dr5kUDxNRBca0SK7cG8JwzkWDQ==}
+    hasBin: true
+
   birpc@2.9.0:
     resolution: {integrity: sha512-KrayHS5pBi69Xi9JmvoqrIgYGDkD6mcSe/i6YKi3w5kekCLzrX4+nawcXqrj2tIp50Kw/mT/s3p+GVK0A0sKxw==}
+
+  browserslist@4.28.1:
+    resolution: {integrity: sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA==}
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+
+  caniuse-lite@1.0.30001763:
+    resolution: {integrity: sha512-mh/dGtq56uN98LlNX9qdbKnzINhX0QzhiWBFEkFfsFO4QyCvL8YegrJAazCwXIeqkIob8BlZPGM3xdnY+sgmvQ==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -686,6 +721,9 @@ packages:
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
 
+  electron-to-chromium@1.5.267:
+    resolution: {integrity: sha512-0Drusm6MVRXSOJpGbaSVgcQsuB4hEkMpHXaVstcPmhu5LIedxs1xNK/nIxmQIU/RPC0+1/o0AVZfBTkTNJOdUw==}
+
   emoji-regex-xs@1.0.0:
     resolution: {integrity: sha512-LRlerrMYoIDrT6jgpeZ2YYl/L8EulRTt5hQcYjy5AInh7HWXKimpqx68aknBFpGL2+/IcogTcaydJEgaTmOpDg==}
 
@@ -702,11 +740,18 @@ packages:
     engines: {node: '>=12'}
     hasBin: true
 
+  escalade@3.2.0:
+    resolution: {integrity: sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==}
+    engines: {node: '>=6'}
+
   estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
   focus-trap@7.7.0:
     resolution: {integrity: sha512-DJJDHpEgoSbP8ZE1MNeU2IzCpfFyFdNZZRilqmfH2XiQsPK6PtD8AfJqWzEBudUQB2yHwZc5iq54rjTaGQ+ljw==}
+
+  fraction.js@5.3.4:
+    resolution: {integrity: sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ==}
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -846,6 +891,9 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  node-releases@2.0.27:
+    resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
+
   oniguruma-to-es@3.1.1:
     resolution: {integrity: sha512-bUH8SDvPkH3ho3dvwJwfonjlQ4R80vjyvrU8YpxuROddv55vAEJrTuCuCVUhhsHbtlD9tGGbaNApGQckXhS8iQ==}
 
@@ -854,6 +902,9 @@ packages:
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
+  postcss-value-parser@4.2.0:
+    resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
@@ -933,6 +984,12 @@ packages:
 
   unist-util-visit@5.0.0:
     resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
+
+  update-browserslist-db@1.2.3:
+    resolution: {integrity: sha512-Js0m9cx+qOgDxo0eMiFGEueWztz+d4+M3rGlmKPT+T4IS/jP4ylw3Nwpu6cpTTP8R1MAC1kF4VbdLt3ARf209w==}
+    hasBin: true
+    peerDependencies:
+      browserslist: '>= 4.21.0'
 
   vfile-message@4.0.3:
     resolution: {integrity: sha512-QTHzsGd1EhbZs4AsQ20JX1rC3cOlt/IWJruk893DfLRr57lcnOeMaWG4K0JrRta4mIJZKth2Au3mM3u03/JWKw==}
@@ -1107,6 +1164,8 @@ snapshots:
   '@algolia/requester-node-http@5.46.1':
     dependencies:
       '@algolia/client-common': 5.46.1
+
+  '@alloc/quick-lru@5.2.0': {}
 
   '@babel/helper-string-parser@7.27.1': {}
 
@@ -1406,6 +1465,14 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.18
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.18
 
+  '@tailwindcss/postcss@4.1.18':
+    dependencies:
+      '@alloc/quick-lru': 5.2.0
+      '@tailwindcss/node': 4.1.18
+      '@tailwindcss/oxide': 4.1.18
+      postcss: 8.5.6
+      tailwindcss: 4.1.18
+
   '@tailwindcss/vite@4.1.18(vite@5.4.21(lightningcss@1.30.2))':
     dependencies:
       '@tailwindcss/node': 4.1.18
@@ -1559,7 +1626,28 @@ snapshots:
       '@algolia/requester-fetch': 5.46.1
       '@algolia/requester-node-http': 5.46.1
 
+  autoprefixer@10.4.23(postcss@8.5.6):
+    dependencies:
+      browserslist: 4.28.1
+      caniuse-lite: 1.0.30001763
+      fraction.js: 5.3.4
+      picocolors: 1.1.1
+      postcss: 8.5.6
+      postcss-value-parser: 4.2.0
+
+  baseline-browser-mapping@2.9.13: {}
+
   birpc@2.9.0: {}
+
+  browserslist@4.28.1:
+    dependencies:
+      baseline-browser-mapping: 2.9.13
+      caniuse-lite: 1.0.30001763
+      electron-to-chromium: 1.5.267
+      node-releases: 2.0.27
+      update-browserslist-db: 1.2.3(browserslist@4.28.1)
+
+  caniuse-lite@1.0.30001763: {}
 
   ccount@2.0.1: {}
 
@@ -1582,6 +1670,8 @@ snapshots:
   devlop@1.1.0:
     dependencies:
       dequal: 2.0.3
+
+  electron-to-chromium@1.5.267: {}
 
   emoji-regex-xs@1.0.0: {}
 
@@ -1618,11 +1708,15 @@ snapshots:
       '@esbuild/win32-ia32': 0.21.5
       '@esbuild/win32-x64': 0.21.5
 
+  escalade@3.2.0: {}
+
   estree-walker@2.0.2: {}
 
   focus-trap@7.7.0:
     dependencies:
       tabbable: 6.3.0
+
+  fraction.js@5.3.4: {}
 
   fsevents@2.3.3:
     optional: true
@@ -1749,6 +1843,8 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  node-releases@2.0.27: {}
+
   oniguruma-to-es@3.1.1:
     dependencies:
       emoji-regex-xs: 1.0.0
@@ -1758,6 +1854,8 @@ snapshots:
   perfect-debounce@1.0.0: {}
 
   picocolors@1.1.1: {}
+
+  postcss-value-parser@4.2.0: {}
 
   postcss@8.5.6:
     dependencies:
@@ -1867,6 +1965,12 @@ snapshots:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
+
+  update-browserslist-db@1.2.3(browserslist@4.28.1):
+    dependencies:
+      browserslist: 4.28.1
+      escalade: 3.2.0
+      picocolors: 1.1.1
 
   vfile-message@4.0.3:
     dependencies:

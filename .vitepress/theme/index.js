@@ -6,6 +6,7 @@ import "./style.css";
 
 import PageTitle from "./components/PageTitle.vue";
 import InfoCard from "./components/InfoCard.vue";
+import ContentSection from "./components/ContentSection.vue";
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -18,5 +19,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component("PageTitle", PageTitle);
     app.component("InfoCard", InfoCard);
+    app.component("ContentSection", ContentSection);
   },
 };
