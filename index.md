@@ -34,31 +34,33 @@ const career = () => {
 }
 </script>
 
-<div class='relative w-full flex flex-col items-center justify-center overflow-hidden pt-55'>
+<div class='relative w-full flex flex-col items-center justify-center overflow-hidden pt-55 '>
   <div class='absolute inset-0 z-0 transition-colors duration-500"'></div>
-  <div class='dark:opacity-0 absolute top-25 opacity-35 sm:top-0'>
+  <div class='dark:opacity-0 absolute top-25 opacity-35 sm:top-0 '>
   <img src='/images/intro_sakura.webp'>
   </div>
   <div class='opacity-0 dark:opacity-35 absolute top-5 right-0 sm:top-0'>
   <img src='/images/hujisan.png' class='w-250'>
   </div>
+  <div class=' opacity-0 min-[1300px]:opacity-100!'>
   <AirlineAnimation />
+  </div>
     <!-- Main -->
   <div class='flex flex-col justify-center items-center text-center'>
-    <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 text-xs tracking-widest font-bold rounded-full shadow-sm">
-    <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+    <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 text-xs tracking-widest font-bold rounded-full shadow-sm animate-fade-in">
+    <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse "></span>
     JAPAN STUDY GUIDE
     </div>
-    <div class="text-5xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-8 drop-shadow-sm font-sans transition-colors fontchange text-gradient">
+    <div class="text-5xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-8 drop-shadow-sm font-sans transition-colors fontchange text-gradient animate-fade-in [animation-delay:300ms] opacity-0">
       日本留学ガイド
     </div>
-    <div class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-8 drop-shadow-sm font-sans transition-colors fontchange">
+    <div class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-8 drop-shadow-sm font-sans transition-colors fontchange animate-fade-in [animation-delay:500ms] opacity-0">
       外国人留学生のために
     </div>
-    <div class="text-md md:text-xl tracking-tight text-slate-900 dark:text-white mb-8 drop-shadow-sm  transition-colors ">
+    <div class="text-md md:text-xl tracking-tight text-slate-900 dark:text-white mb-8 drop-shadow-sm  transition-colors animate-fade-in [animation-delay:700ms] opacity-0">
       計画・入国・生活・進路・支援情報
     </div>
-    <div class='flex justify-center'>
+    <div class='flex justify-center animate-fade-in [animation-delay:900ms] opacity-0'>
       <div 
         @click="startJourney"
         class="group relative inline-flex items-center justify-center px-5 py-2 bg-blue-900/80 hover:bg-blue-700 text-white text-sm rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 font-bold cursor-pointer">
@@ -73,7 +75,7 @@ const career = () => {
   </div>
 
   <!-- feature -->
-  <div class=' w-4/5 max-w-7xl m-15'>
+  <div class=' w-4/5 max-w-7xl m-15 animate-fade-in [animation-delay:1100ms] opacity-0'>
     <div class=" glass p-8 rounded-2xl dark:border-slate-800 shadow-sm mx-auto transition-colors duration-300">
         <!-- feature -->
         <div class="grid grid-cols-1 md:grid-cols-2 min-[1300px]:grid-cols-4! gap-6 mt-7">
