@@ -29,10 +29,42 @@
 }
 
 .glass {
-  background: rgba(30, 66, 129, 0.44);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(16.8px);
   -webkit-backdrop-filter: blur(16.8px);
   border: 1px solid rgba(30, 66, 129, 0.3);
+}
+
+/* background color */
+:root.custom-home-bg,
+body.custom-home-bg,
+.custom-home-bg {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #eff6ff 50%,
+    #dbeafe 100%
+  ) !important;
+  background-attachment: fixed;
+}
+
+.dark :root.custom-home-bg,
+.dark body.custom-home-bg,
+.dark .custom-home-bg {
+  background: linear-gradient(
+    135deg,
+    #020617 0%,
+    #0f172a 50%,
+    #1e293b 100%
+  ) !important;
+  background-attachment: fixed;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #4facfe 0%, #a25dfc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }

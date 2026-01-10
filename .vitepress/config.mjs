@@ -52,7 +52,7 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "日本の魅力", link: "/docs/なぜ日本？/なぜ日本？" },
+      { text: "日本の魅力", link: "/docs/whyjp/whyjp" },
       {
         text: "留学計画",
         items: [
@@ -98,10 +98,10 @@ export default defineConfig({
             link: "/docs/生活ガイド/02.口座開設・電話番号",
           },
           { text: "住まい", link: "/docs/生活ガイド/03.住まい" },
-          { text: "緊急対応", link: "/docs/生活ガイド/04.緊急対応" },
           { text: "交通・通学", link: "/docs/生活ガイド/05.交通・通学" },
           { text: "ゴミ分別", link: "/docs/生活ガイド/06.ゴミ分別" },
           { text: "アルバイト", link: "/docs/生活ガイド/07.アルバイト" },
+          { text: "緊急対応", link: "/docs/生活ガイド/04.緊急対応" },
         ],
       },
       {
@@ -172,10 +172,10 @@ export default defineConfig({
               link: "/docs/生活ガイド/02.口座開設・電話番号",
             },
             { text: "住まい", link: "/docs/生活ガイド/03.住まい" },
-            { text: "緊急対応", link: "/docs/生活ガイド/04.緊急対応" },
             { text: "交通・通学", link: "/docs/生活ガイド/05.交通・通学" },
             { text: "ゴミ分別", link: "/docs/生活ガイド/06.ゴミ分別" },
             { text: "アルバイト", link: "/docs/生活ガイド/07.アルバイト" },
+            { text: "緊急対応", link: "/docs/生活ガイド/04.緊急対応" },
           ],
         },
       ],

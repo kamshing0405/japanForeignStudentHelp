@@ -7,6 +7,7 @@ import "./style.css";
 import PageTitle from "./components/PageTitle.vue";
 import InfoCard from "./components/InfoCard.vue";
 import ContentSection from "./components/ContentSection.vue";
+import AirlineAnimation from "./components/AirlineAnimation.vue";
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -20,5 +21,6 @@ export default {
     app.component("PageTitle", PageTitle);
     app.component("InfoCard", InfoCard);
     app.component("ContentSection", ContentSection);
+    app.component("AirlineAnimation", AirlineAnimation);
   },
 };

@@ -45,8 +45,6 @@ const scrollToSection = (id) => {
   </div>
 </div>
 
-<img :src='sakura'>
-
 <div class='glass w-auto mb-15'>
     <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-gray-100 dark:border-slate-800 shadow-sm mx-auto transition-colors duration-300">
         <h3 class="text-lg text-center text-gray-900 dark:text-white transition-colors duration-300">
