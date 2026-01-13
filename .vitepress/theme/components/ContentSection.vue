@@ -47,9 +47,7 @@ const isEven = computed(() => props.index % 2 === 0);
             </p>
           </header>
 
-          <div
-            class="prose prose-stone prose-lg leading-relaxed text-justify font-sans"
-          >
+          <div class="prose prose-stone prose-lg leading-relaxed font-sans">
             <p
               v-for="(paragraph, i) in section.content.split('\n\n')"
               :key="i"
